@@ -1,0 +1,5 @@
+repo: emaildozotti/camila-ahur
+url: https://github.com/emaildozotti/camila-ahur
+vercel: https://camila-ahur-lp.vercel.app
+git: .git neste diretorio
+push: git push origin main (direto daqui)
