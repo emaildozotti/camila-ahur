@@ -79,9 +79,12 @@ export default function Footer() {
 
             <FadeIn delay={0.3}>
               <a
-                href={SITE.waLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#agendar"
+                onClick={(e) => {
+                  e.preventDefault()
+                  const el = document.getElementById('agendar')
+                  if (el) el.scrollIntoView({ behavior: 'smooth' })
+                }}
                 className="btn-shimmer rounded-sm text-sm font-medium tracking-wide"
                 style={{
                   backgroundColor: 'var(--color-secondary)',
@@ -89,6 +92,7 @@ export default function Footer() {
                   fontFamily: 'var(--font-sans)',
                   fontWeight: 500,
                   textDecoration: 'none',
+                  cursor: 'pointer',
                 }}
               >
                 {COPY.ctaText}

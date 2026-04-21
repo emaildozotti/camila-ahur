@@ -98,9 +98,12 @@ export default function Header() {
 
           {/* CTA pill */}
           <a
-            href={SITE.waLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#agendar"
+            onClick={(e) => {
+              e.preventDefault()
+              const el = document.getElementById('agendar')
+              if (el) el.scrollIntoView({ behavior: 'smooth' })
+            }}
             className="relative"
             style={{
               display: 'inline-flex',
