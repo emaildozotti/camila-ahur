@@ -7,7 +7,6 @@ import About from './components/About'
 import HowItWorks from './components/HowItWorks'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
-import CalendarSection from './components/CalendarSection'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
       <HowItWorks />
       <Testimonials />
       <FAQ />
-      <CalendarSection />
       <Footer />
     </main>
   )

@@ -26,12 +26,6 @@ export default function Hero() {
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const scrollToAgendar = (e: React.MouseEvent) => {
-    e.preventDefault()
-    const el = document.getElementById('agendar')
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"
@@ -148,20 +142,21 @@ export default function Hero() {
               transition={{ duration: 1.2, delay: 0.45, ease }}
               className="flex flex-col sm:flex-row gap-4 pt-2"
             >
-              <button
-                onClick={scrollToAgendar}
+              <a
+                href={SITE.waLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-shimmer rounded-sm text-sm font-medium tracking-wide"
                 style={{
                   backgroundColor: 'var(--color-secondary)',
                   color: 'var(--color-primary-dark)',
                   fontFamily: 'var(--font-sans)',
                   fontWeight: 500,
-                  border: 'none',
-                  cursor: 'pointer',
+                  textDecoration: 'none',
                 }}
               >
                 {COPY.ctaPrimary}
-              </button>
+              </a>
               <button
                 onClick={scrollToDores}
                 className="flex items-center justify-center gap-2 text-sm cursor-pointer"
